@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Banking App for Marshall's Big Bank</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+	<h1>Welcome to Marshall's Big Bank</h1>
+</header><!-- /header -->
+<!-- NAme info -->
+<div id="bodyContainer">
+	<div id="basicInfo">
+		<fieldset>
+			<legend>Your Name</legend>
+			<label> Your last name:
+				<input type="text" name="lastName" placeholder="Doe" required>
+			</label>
+			<label> Your middle name:
+				<input type="text" name="middleName" placeholder="">
+			</label>
+			<label> Your first name:
+				<input type="text" name="firstName" placeholder="Jane" required>
+			</label>
+		</fieldset>
+	</div>
+	<!-- Member Address -->
+	<div id="address">
+		<fieldset>
+			<legend>Your Address</legend>
+			<label> Your address:
+				<input type="text" name="homeAddress" placeholder="123 Fake St." required>
+			</label>
+		</fieldset>
+	</div>
+	<!-- Employment information below -->
+	<div id="employment">
+		<fieldset>
+		<legend>Your Employer</legend>
+			<label> Your occupation:
+				<input type="text" name="job" placeholder="123 Fake St." required>
+			</label>
+			<label> Your employer:
+				<input type="text" name="employer" placeholder="123 Fake St." required>
+			</label>
+			<label> Your employer's address:
+				<input type="text" name="employAddy" placeholder="123 Fake St.">
+			</label>
+		</fieldset>
+	</div>
+	<!-- Loan Info -->
+	<div id="loanInfo">
+		<fieldset>
+		<legend>Your Loan</legend>
+			<h4>Type of Loan</h4>
+			<label>
+				<input type="radio" name="Loan" value="commercial" checked="checked"> Commercial <!-- How to make button and label on one line? -->
+				<input type="radio" name="Loan" value="realEstate"> Real Estate
+				<input type="radio" name="Loan" value="personal"> Personal
+				<input type="radio" name="Loan" value="mortgage"> Mortgage
+			</label>
+			<h4>Loan Amount</h4>
+			<label>
+				<input type="number" name="loanTime" placeholder="$1000">
+			</label>
+			<h4>Loan Length</h4>
+			<label>
+				<input type="radio" name="loanTime" value="5 Years" checked="checked"> 5 Years
+				<input type="radio" name="loanTime" value="10 Years"> 10 Years
+				<input type="radio" name="loanTime" value="15 Years"> 15 Years
+			</label>
+			<h4>Your Loan Details</h4>
+			<label>
+				<input type="checkbox" name="downPayment" value="I have a down payment"> I have a down payment
+				<input type="checkbox" name="outOfState" value="Out of State"> Out of State
+				<input type="checkbox" name="married" value="Married"> Married
+				<input type="checkbox" name="co-sign" value="Co-signer"> Co-signer
+			</label>	
+		</fieldset>
+	</div>
+	<!-- Other info -->
+	<div id="other">
+		<fieldset>
+			<legend>Comments and Contact</legend>
+			Comments <textarea name="comments" rows="15" cols="50" placeholder="Any specail comments?"></textarea>
+			<label> You email address:
+				<input type="email" name="email" placeholder="me@mine.com">
+			</label>
+			<label> You phone number:
+				<input type="telphone" name="phone" placeholder="800-666-0000">
+			</label>
+				<label> You LinkedIn profile:
+			<input type="url" name="linkedIn" placeholder="LinkedIn.com">
+			</label>
+		</fieldset>
+	</div>
+</body>
+</html>

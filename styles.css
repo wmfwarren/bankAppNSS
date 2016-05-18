@@ -1,0 +1,27 @@
+header {
+	text-align: center;
+	width: 50%;
+	margin: 0 auto;
+}
+
+fieldset {
+	margin: 0 auto;
+	display: inline-block;
+	width: 100%;
+	background-color: white;
+}
+
+input {
+	display: block;
+}
+
+div#bodyContainer {
+	width: 50%;
+	margin: 0 auto;
+}
+
+div.topBorder {
+	border-top: solid 1px black;
+	margin 0;
+	padding 0;
+}
